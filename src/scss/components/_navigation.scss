@@ -16,12 +16,17 @@
   border-top: 1px solid #e7d8fb;
 }
 
+.navigation__link:hover {
+  color: #a973f2;
+}
+
 .navigation__link--active {
-  background: rgb(169, 115, 242);
-  background: linear-gradient(
-    150deg,
-    rgba(169, 115, 242, 1) 0%,
-    rgba(90, 132, 162, 1) 100%
-  );
+  background: var(--background-g);
+  background: var(--background-gradient);
+
+  color: white;
+}
+
+.navigation__link--active:hover {
   color: white;
 }
