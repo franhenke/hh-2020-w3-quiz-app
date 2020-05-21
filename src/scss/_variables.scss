@@ -1,4 +1,9 @@
 :root {
-  --primary: hotpink;
-  --secondary: skyblue;
+  --primary: white;
+  --background-g: rgb(192, 156, 249);
+  --background-gradient: linear-gradient(
+    150deg,
+    rgba(192, 156, 249, 1) 0%,
+    rgba(153, 80, 246, 1) 100%
+  );
 }
