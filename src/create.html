@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" />
+  </head>
 
-</body>
+  <body class="main-grid">
+    <header class="create-header">New Question</header>
+
+    <div class="question-container">
+      <form>
+        <div class="question-form">
+          <label for="text" class="question__label">Add your question</label>
+          <textarea id="text" name="question" cols="35" rows="4"></textarea>
+          <a href="#" class="question-form__button" type="submit"
+            ><span>Submit Question</span></a
+          >
+        </div>
+
+        <div class="question-form">
+          <label for="text" class="question__label">Add your answer</label>
+          <textarea id="answer" name="question" cols="35" rows="4"></textarea>
+          <a href="#" class="question-form__button" type="submit"
+            ><span>Submit Answer</span></a
+          >
+        </div>
+      </form>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+      <a class="navigation__link" href="/"><i class="fas fa-home"></i></a>
+      <a class="navigation__link" href="bookmarks.html"
+        ><i class="far fa-bookmark"></i
+      ></a>
+      <a class="navigation__link navigation__link--active" href="/create.html"
+        ><i class="fas fa-plus"></i
+      ></a>
+      <a class="navigation__link" href="/profile.html"
+        ><i class="far fa-user"></i
+      ></a>
+    </nav>
+  </body>
 </html>
