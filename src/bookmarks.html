@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" />
+  </head>
+  <body class="main-grid">
+    <header class="main-header">Bookmarks</header>
 
-</body>
+    <!-- Quiz Cards -->
+    <main class="card__container">
+      <section class="card">
+        <p class="card__question">
+          What does HTML stand for?
+        </p>
+        <a href="#" class="card__bookmark--remove"
+          ><i class="fas fa-minus"></i
+        ></a>
+        <a href="#" class="card__button"><span>show answer</span></a>
+      </section>
+      <section class="card">
+        <p class="card__question">
+          A CSS file can be applied to only one HTML file.
+        </p>
+        <a href="#" class="card__bookmark--remove"
+          ><i class="fas fa-minus"></i
+        ></a>
+        <a href="#" class="card__button"><span>show answer</span></a>
+      </section>
+      <section class="card">
+        <p class="card__question">
+          Is HTML a programming language?
+        </p>
+        <a href="#" class="card__bookmark--remove"
+          ><i class="fas fa-minus"></i
+        ></a>
+        <a href="#" class="card__button"><span>show answer</span></a>
+      </section>
+      <section class="card">
+        <p class="card__question">
+          Where should a CSS file be referenced in a HTML file?
+        </p>
+        <a href="#" class="card__bookmark--remove"
+          ><i class="fas fa-minus"></i
+        ></a>
+        <a href="#" class="card__button"><span>show answer</span></a>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+
+    <nav class="navigation">
+      <a class="navigation__link" href="/"><i class="fas fa-home"></i></a>
+      <a
+        class="navigation__link navigation__link--active"
+        href="/bookmarks.html"
+        ><i class="far fa-bookmark"></i
+      ></a>
+      <a class="navigation__link" href="/create.html"
+        ><i class="fas fa-plus"></i
+      ></a>
+      <a class="navigation__link" href="/profile.html"
+        ><i class="far fa-user"></i
+      ></a>
+    </nav>
+  </body>
 </html>
